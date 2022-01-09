@@ -6,7 +6,7 @@
 # 입력받은 값을 split 함수를 통해 공백을 기준으로 잘라 준다. a(공백)b => [a, b]
 a, b = input().split()
 
-# 정수 a, b를 정수로 변환
+# 수 a, b를 정수로 변환
 a = int(a)
 b = int(b)
 
