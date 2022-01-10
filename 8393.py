@@ -8,6 +8,6 @@
 n = int(input())
 
 sum = 0
-for i in range(1, n+1):    # 1부터 n+1만큼 반복
+for i in range(1, n+1):    # 1부터 n+1까지 범위 지정
     sum += i
 print(sum)
