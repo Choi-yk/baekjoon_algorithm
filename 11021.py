@@ -10,6 +10,10 @@
 t = int(input())  # 먼저 입력 받음
 
 for i in range(1, t + 1):
-    n = input().split()  # 그리고 또 입력받은 값을 쪼갠다. 입력된 값이 1 1일 경우, [1,1]이 된다.
-    sum = int(n[0]) + int(n[1])  # 정수로 변환하여 쪼개진 값끼리 더한다.
+    a, b = input().split()  # 그리고 또 입력받은 값을 쪼갠다. 입력된 값이 1 1일 경우, [1,1]이 된다.
+
+    a = int(a)
+    b = int(b)
+
+    sum = a + b
     print("Case #%d: %d" % (i, sum))
