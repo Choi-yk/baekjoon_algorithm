@@ -8,15 +8,13 @@
 # 각 테스트 케이스마다 A+B를 출력한다.
 
 # EOF(End Of File)-파일의 끝. 빈 문자열, 입력이 끝날 때까지 A+B를 출력하는 문제
-# 참고: https://www.acmicpc.net/board/view/28913
+# 참고: https://y00n-lee.tistory.com/9
 
 while True:
+    # try-catch문을 통해 예외처리를 한다.
     try:
-        a, b = input().split()
-        a = int(a)
-        b = int(b)
-
+        a, b = map(int, input().split())
         print(a + b)
-    except EOFError:    # EOF를 만났을 때
-        break
 
+    except:  # except 옆에 EOFError를 써도 된다.
+        break  # 오류가 발생하면 While문이 멈춤
