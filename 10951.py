@@ -17,4 +17,4 @@ while True:
         print(a + b)
 
     except:  # except 옆에 EOFError를 써도 된다.
-        break  # 오류가 발생하면 While문이 멈춤
+        break  # 오류가 발생하면 break문을 호출하여 While문을 멈추게 함
