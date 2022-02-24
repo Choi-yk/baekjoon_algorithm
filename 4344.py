@@ -8,7 +8,6 @@
 
 # 참고: https://mayuntel.tistory.com/18(퍼센트 기호 출력), https://ooyoung.tistory.com/62
 # 문자열 포매팅을 알아야 한다. 파이썬 3.6 이상(f-string) https://ooyoung.tistory.com/87
-# 왜 때문인지 백준 알고리즘에서 채점하면 자꾸 틀렸다고 한다..
 
 c = int(input())  # c: 테스트 케이스의 개수, 입력
 
@@ -17,7 +16,7 @@ for i in range(c):  # 각 테스트 케이스마다 학생의 수가 첫 수로 
     avg_score = sum(n_score[1:]) / n_score[0]  # avg_score: 평균 점수. 점수 합계 / 학생의 수
 
     avg_cnt = 0  # avg_cnt: 평균 점수보다 점수가 높은 학생의 수 세기
-    for j in n_score:
+    for j in n_score[1:]:
         if j > avg_score:
             avg_cnt += 1
     avg_rate = avg_cnt / n_score[0] * 100  # 평균 점수보다 점수가 높은 학생의 수 / 전체 학생의 수 * 100
