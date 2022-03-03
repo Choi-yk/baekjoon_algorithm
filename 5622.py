@@ -8,6 +8,7 @@
 d_list = ['', '', '1', 'ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
 
 a = input()
+
 min_sec = 0
 for i in d_list:
     for j in i:  # i에 있는 문자열을 쪼갬, ABC -> ['A','B','C']
